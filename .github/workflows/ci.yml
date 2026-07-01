@@ -13,6 +13,11 @@ jobs:
             - name: baixar codigo
               uses: actions/checkout@v4
 
+            - name: Configurar Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: '24'  
+
             - name: Verificar arquivos
               run: 
                 echo "Projeto recebido"
